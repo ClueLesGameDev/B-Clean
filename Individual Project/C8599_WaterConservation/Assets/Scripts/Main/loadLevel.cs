@@ -21,4 +21,9 @@ public class loadLevel : MonoBehaviour
     {
         SceneManager.LoadScene("DirtyDishes", LoadSceneMode.Single);
     }
+
+    public void loadCatchThatDrop()
+    {
+        SceneManager.LoadScene("CatchThatDrop", LoadSceneMode.Single);
+    }
 }
