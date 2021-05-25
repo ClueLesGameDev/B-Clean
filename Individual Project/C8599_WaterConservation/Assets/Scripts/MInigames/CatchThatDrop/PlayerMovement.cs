@@ -1,26 +1,42 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour 
 {
-    // Start is called before the first frame update
-    void Start()
+    private Vector3 offset;
+    Vector3 camCord;
+    public static int score = 0;
+   
+    public void OnMouseDown()
     {
-        
+        camCord = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+        offset = gameObject.transform.position - GetMouseWorldPos();
     }
 
-    // Update is called once per frame
-    void Update()
+    private Vector3 GetMouseWorldPos()
     {
-        if (Input.GetMouseButton(0))
+        Vector3 mousePoint = Input.mousePosition;
+
+        mousePoint.z = camCord.z;
+
+        return Camera.main.WorldToScreenPoint(mousePoint);
+    }
+
+    public void OnMouseDrag()
+    {
+        transform.position = new Vector3(GetMouseWorldPos().x + offset.x, transform.position.y, transform.position.z);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Collectible")
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            transform.Translate(mousePos * 20 * Time.deltaTime);
+            score++;
+            //Debug.Log(score);
+            Destroy(collision.gameObject);
         }
-
-           
-
     }
 }

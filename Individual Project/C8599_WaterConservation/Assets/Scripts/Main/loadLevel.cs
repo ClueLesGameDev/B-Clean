@@ -26,4 +26,9 @@ public class loadLevel : MonoBehaviour
     {
         SceneManager.LoadScene("CatchThatDrop", LoadSceneMode.Single);
     }
+
+    public void loadSpotThatGerm()
+    {
+        SceneManager.LoadScene("SpotThatGerm", LoadSceneMode.Single);
+    }
 }
