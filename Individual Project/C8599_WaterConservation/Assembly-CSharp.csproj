@@ -68,6 +68,10 @@
     <Compile Include="Assets\Scripts\MInigames\CatchThatDrop\GameManager.cs" />
     <Compile Include="Assets\Scripts\MInigames\CatchThatDrop\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\MInigames\CatchThatDrop\UIManager.cs" />
+    <Compile Include="Assets\Scripts\MInigames\SpotThatGerm\BugLife.cs" />
+    <Compile Include="Assets\Scripts\MInigames\SpotThatGerm\GameManger.cs" />
+    <Compile Include="Assets\Scripts\MInigames\SpotThatGerm\UIManager_STG.cs" />
+    <Compile Include="Assets\Scripts\Main\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Main\Countdown.cs" />
     <Compile Include="Assets\Scripts\Main\WaterLevel.cs" />
     <Compile Include="Assets\Scripts\Main\loadLevel.cs" />
@@ -628,6 +632,10 @@
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{50E8F421-7103-2B41-2315-46DAFB0CF817}</Project>
       <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{36C6D734-9EF5-4D1E-897E-7DBEE17D142A}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{FB1A884A-7041-0E24-A87A-6EAED6B54930}</Project>

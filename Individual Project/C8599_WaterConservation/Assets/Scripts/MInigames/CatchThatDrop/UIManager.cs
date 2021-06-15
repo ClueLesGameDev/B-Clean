@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     private GameObject score;
+    [SerializeField]
+    private GameObject finalScore;
     void Update()
     {
         score.GetComponent<Text>().text = PlayerMovement.score + "";
@@ -24,6 +26,8 @@ public class UIManager : MonoBehaviour
         if (GameManager.life == 0)
         {
             life[2].SetActive(false);
+            finalScore.SetActive(true);
+            GameObject.Find("ScoreDisplay").transform.Find("Text").gameObject.GetComponent<Text>().text = PlayerMovement.score + "";
         }
     }
 }

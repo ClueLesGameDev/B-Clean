@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/MIniGames/CatchThatDrop.unity
+- path: Assets/Scenes/Levels/DirtyDishes.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -16,7 +16,10 @@ public class loadLevel : MonoBehaviour
     {
         
     }
-
+    public void loadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+    }
     public void loadDirtyDishes()
     {
         SceneManager.LoadScene("DirtyDishes", LoadSceneMode.Single);

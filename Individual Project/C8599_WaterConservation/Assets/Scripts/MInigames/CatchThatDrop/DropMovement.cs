@@ -11,10 +11,11 @@ public class DropMovement : MonoBehaviour
         
         transform.Translate(Vector3.down * GameManager.speed * Time.deltaTime);
 
-        if(transform.position.y < -230)
+        if(transform.position.y < -140)
         {
             GameManager.life--;
             Destroy(this.gameObject);
+            Destroy(this);
         }
 
     }

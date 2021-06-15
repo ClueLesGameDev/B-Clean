@@ -35,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
         if (collision.tag == "Collectible")
         {
             score++;
-            //Debug.Log(score);
             Destroy(collision.gameObject);
         }
     }
