@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Levels/DirtyDishes.unity
+- path: Assets/Scenes/MIniGames/SpotThatGerm.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

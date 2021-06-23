@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BugLife : MonoBehaviour
 {
+    [SerializeField]
+    private AudioSource killAudio;
+
     bool isKilled = false;
     void Start()
     {
@@ -24,6 +27,7 @@ public class BugLife : MonoBehaviour
     {
         GameManger.score++;
         GetComponent<Animator>().enabled = true;
+        killAudio.Play();
         isKilled = true;
         StartCoroutine(Die());
        

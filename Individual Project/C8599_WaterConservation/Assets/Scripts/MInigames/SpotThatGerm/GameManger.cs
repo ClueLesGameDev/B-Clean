@@ -6,6 +6,7 @@ public class GameManger : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] Bugs = new GameObject[3];
+    
 
     public static int score = 0;
     public static int life = 3;
