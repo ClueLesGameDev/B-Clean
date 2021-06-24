@@ -5,31 +5,39 @@ using UnityEngine.UI;
 
 public class Countdown : MonoBehaviour
 {
-
-    private int timeRemaining = 25;
+    float milliSecond;
+    int second;
+    int minute;
+   
     [SerializeField]
-    private GameObject timeField;
+    private GameObject secDisp;
+    [SerializeField]
+    private GameObject minDisp;
 
-    void Start()
+
+    void Update()
     {
-        timeField.GetComponent<Text>().text = timeRemaining + "";
-        StartCoroutine(CountdownTimer());
-
-    }
-
-    IEnumerator CountdownTimer()
-    {
-        yield return new WaitForSeconds(1.0f);
-        timeRemaining--;
-        timeField.GetComponent<Text>().text = timeRemaining + "";
-        if(timeRemaining == 0)
+        milliSecond += Time.deltaTime * 10;
+        if (milliSecond > 9)
         {
-            Debug.Log("Game Over");
+            milliSecond = 0;
+            second++;
         }
-        else
+
+        if (second < 10) { secDisp.GetComponent<Text>().text = "0" + second + "" ; }
+
+        else { secDisp.GetComponent<Text>().text = second + "" ; }
+
+        if (second >= 60)
         {
-            StartCoroutine(CountdownTimer());
+            second = 0;
+            minute++;
         }
-       
+
+
+        if (minute < 10) { minDisp.GetComponent<Text>().text = "0" + minute + "" + ":"; }
+
+        else { minDisp.GetComponent<Text>().text = minute + "" + ":"; }
+
     }
 }
