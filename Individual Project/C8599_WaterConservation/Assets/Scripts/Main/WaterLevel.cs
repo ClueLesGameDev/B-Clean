@@ -3,71 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WaterLevel : MonoBehaviour
+public class UImanager_DD : MonoBehaviour
 {
-    private int waterPercentage = 100;
+    
     [SerializeField]
     private GameObject waterField;
-    private int dirtyPlates = 9;
-    public bool tapOpen;
+    [SerializeField]
+    private GameObject secondField;
+    [SerializeField]
+    private GameObject minuteField;
 
-    void Start()
-    {
-        waterField.GetComponent<Text>().text = waterPercentage + "%";
-        tapOpen = false;
-    }
 
     void Update()
     {
-        if (waterPercentage == 0)
-        {
-            Debug.Log("Game Over");
-        }
+        waterField.GetComponent<Text>().text = MainGame.waterPercentage + "%";
 
-        if (dirtyPlates == 0)
-        {
-             if (waterPercentage > 45)
-             {
-                Debug.Log("you won");
-                Debug.Log("You got a bonus card");
-             }
-             else
-             {
-                Debug.Log("you won");
-             }
-        }
-          
-    }
+        if (Countdown.second < 10) 
+            secondField.GetComponent<Text>().text = "0" + Countdown.second + "";
+        else 
+            secondField.GetComponent<Text>().text = Countdown.second + "";
 
-    public void TapOpen()
-    {
-        tapOpen = true;
-        StartCoroutine(CountdownTimer());
+        if (Countdown.minute < 10)
+            minuteField.GetComponent<Text>().text = "0" + Countdown.minute + "" + ":"; 
+        else 
+            minuteField.GetComponent<Text>().text = Countdown.minute + "" + ":"; 
+
 
     }
 
-    public void TapClose()
-    {
-        tapOpen = false;
-       
+   
 
-    }
-
-    public void CleanPlates()
-    {
-        dirtyPlates--;
-    }
-
-    IEnumerator CountdownTimer()
-    {
-        yield return new WaitForSeconds(1.0f);
-        waterPercentage--;
-        waterField.GetComponent<Text>().text = waterPercentage + "";
-        
-        if (tapOpen == true)
-        {
-            StartCoroutine(CountdownTimer());
-        }
-
-    }
+    
 }

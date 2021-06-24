@@ -5,6 +5,9 @@ using UnityEngine;
 public class MainGame : MonoBehaviour
 {
     public Camera playerCam;
+    public static int waterPercentage = 100;
+    private int dirtyPlates = 9;
+    public bool tapOpen;
     //public GameObject popup;
 
     int platecount = 0;
@@ -21,7 +24,7 @@ public class MainGame : MonoBehaviour
             if (isHit)
             {
                 {
-                    if(hitInfo.transform.gameObject.tag == "MovableObj")
+                    if(hitInfo.transform.gameObject.tag == "Collectible")
                     {
                         CollectPlates();
                         Debug.Log("Hit " + hitInfo.transform.gameObject.name);
@@ -32,8 +35,50 @@ public class MainGame : MonoBehaviour
             }
 
         }
+
+        if (waterPercentage == 0)
+        {
+            Debug.Log("Game Over");
+        }
+
+        if (dirtyPlates == 0 && waterPercentage > 0)
+        {
+            {
+                Debug.Log("you won");
+            }
+        }
     }
 
+    public void TapOpen()
+    {
+        tapOpen = true;
+        StartCoroutine(CountdownTimer());
+
+    }
+
+    public void TapClose()
+    {
+        tapOpen = false;
+
+
+    }
+
+    public void CleanPlates()
+    {
+        dirtyPlates--;
+    }
+
+    IEnumerator CountdownTimer()
+    {
+        yield return new WaitForSeconds(1.0f);
+        waterPercentage--;
+
+        if (tapOpen == true)
+        {
+            StartCoroutine(CountdownTimer());
+        }
+
+    }
     public void CollectPlates()
     {
        if (platecount > 3)

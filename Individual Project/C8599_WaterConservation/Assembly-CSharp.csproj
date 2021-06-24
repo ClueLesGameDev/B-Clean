@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Main\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Main\Countdown.cs" />
     <Compile Include="Assets\Scripts\Main\MainGame.cs" />
+    <Compile Include="Assets\Scripts\Main\UImanager_DD.cs" />
     <Compile Include="Assets\Scripts\Main\WaterLevel.cs" />
     <Compile Include="Assets\Scripts\Main\loadLevel.cs" />
     <Reference Include="UnityEngine">
