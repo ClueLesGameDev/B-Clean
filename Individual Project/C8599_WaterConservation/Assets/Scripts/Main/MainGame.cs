@@ -43,9 +43,13 @@ public class MainGame : MonoBehaviour
 
         if (dirtyPlates == 0 && waterPercentage > 0)
         {
+            if(Countdown.minute < 1.0)
             {
-                Debug.Log("you won");
+                Debug.Log("bonus unlocked");
             }
+       
+            Debug.Log("you won");
+           
         }
     }
 
