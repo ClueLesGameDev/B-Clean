@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class MainGame : MonoBehaviour
 {
+    public GameObject player;
     public Camera playerCam;
     public static int waterPercentage = 100;
     private int dirtyPlates = 9;
     public bool tapOpen;
-    //public GameObject popup;
+    public GameObject switchPopup;
 
     int platecount = 0;
 
@@ -19,7 +20,7 @@ public class MainGame : MonoBehaviour
             Debug.Log("Mouse is down");
 
             RaycastHit hitInfo = new RaycastHit();
-            
+
             bool isHit = Physics.Raycast(playerCam.ScreenPointToRay(Input.mousePosition), out hitInfo);
             if (isHit)
             {
@@ -35,6 +36,12 @@ public class MainGame : MonoBehaviour
             }
 
         }
+        if (player.transform.position.x < -250 && player.transform.position.z >= 250)
+        {
+            switchPopup.SetActive(true);
+        }
+        else
+            switchPopup.SetActive(false);
 
         if (waterPercentage == 0)
         {

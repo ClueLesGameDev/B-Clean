@@ -18,6 +18,7 @@ public class CameraMovement : MonoBehaviour
         if(transform.position.z > 300)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, 300);
+            
         }
         transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime);
         transform.Translate(Vector3.forward * Input.GetAxis("Vertical") * speed * Time.deltaTime);
