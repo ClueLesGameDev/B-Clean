@@ -12,6 +12,12 @@ public class UImanager_DD : MonoBehaviour
     private GameObject secondField;
     [SerializeField]
     private GameObject minuteField;
+    [SerializeField]
+    private GameObject holdField;
+    [SerializeField]
+    private GameObject remainingField;
+    [SerializeField]
+    private GameObject cleanedField;
 
 
     void Update()
@@ -26,9 +32,13 @@ public class UImanager_DD : MonoBehaviour
         if (Countdown.minute < 10)
             minuteField.GetComponent<Text>().text = "0" + Countdown.minute + "" + ":"; 
         else 
-            minuteField.GetComponent<Text>().text = Countdown.minute + "" + ":"; 
+            minuteField.GetComponent<Text>().text = Countdown.minute + "" + ":";
 
+        holdField.GetComponent<Text>().text = "x " + MainGame.platecount;
 
+        remainingField.GetComponent<Text>().text = "x " + MainGame.dirtyPlates;
+
+        cleanedField.GetComponent<Text>().text = "x " + MainGame.cleanPlates;
     }
 
    

@@ -2,22 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MainGame : MonoBehaviour
 {
     public GameObject player;
     public Camera playerCam;
     public static int waterPercentage = 100;
-    private int dirtyPlates = 9;
     public bool tapOpen;
     public GameObject switchPopup;
 
-    int platecount = 0;
-
+    public static int platecount = 0;
+    public static int dirtyPlates = 15;
+    public static int cleanPlates = 0;
     private void Update()
     {
+        if(platecount < 0)
+        {
+            platecount = 0;
+        }
+        //collecting plates
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Mouse is down");
 
             RaycastHit hitInfo = new RaycastHit();
 
@@ -27,15 +32,21 @@ public class MainGame : MonoBehaviour
                 {
                     if(hitInfo.transform.gameObject.tag == "Collectible")
                     {
-                        CollectPlates();
+                        CollectPlates(hitInfo.transform.gameObject);
                         Debug.Log("Hit " + hitInfo.transform.gameObject.name);
-                        //popup.SetActive(true);
                     }
                 }
                
             }
 
         }
+        //player movement lock
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            CameraMovement.movCam *= -1;
+        }
+        
+        //switch activation
         if (player.transform.position.x < -250 && player.transform.position.z >= 250)
         {
             switchPopup.SetActive(true);
@@ -43,6 +54,7 @@ public class MainGame : MonoBehaviour
         else
             switchPopup.SetActive(false);
 
+       
         if (waterPercentage == 0)
         {
             Debug.Log("Game Over");
@@ -74,31 +86,35 @@ public class MainGame : MonoBehaviour
 
     }
 
-    public void CleanPlates()
+    IEnumerator CleanPlates()
     {
+        yield return new WaitForSeconds(1.5f);
         dirtyPlates--;
+        cleanPlates++;
+        platecount--;
     }
 
     IEnumerator CountdownTimer()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(5.0f);
         waterPercentage--;
 
         if (tapOpen == true)
         {
+            StartCoroutine(CleanPlates());
             StartCoroutine(CountdownTimer());
         }
 
     }
-    public void CollectPlates()
+    public void CollectPlates(GameObject onHold)
     {
-       if (platecount > 3)
+       if (platecount >= 3)
         {
             Debug.Log("limit");
             return;
         }
+        onHold.SetActive(false);
         platecount++;
-        Debug.Log(platecount);
     }
          
 }
