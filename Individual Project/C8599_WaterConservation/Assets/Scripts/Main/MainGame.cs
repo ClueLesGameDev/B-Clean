@@ -30,20 +30,15 @@ public class MainGame : MonoBehaviour
             if (isHit)
             {
                 {
-                    if(hitInfo.transform.gameObject.tag == "Collectible")
+                    if (hitInfo.transform.gameObject.tag == "Collectible")
                     {
                         CollectPlates(hitInfo.transform.gameObject);
                         Debug.Log("Hit " + hitInfo.transform.gameObject.name);
                     }
                 }
-               
+
             }
 
-        }
-        //player movement lock
-        if(Input.GetKeyDown(KeyCode.C))
-        {
-            CameraMovement.movCam *= -1;
         }
         
         //switch activation

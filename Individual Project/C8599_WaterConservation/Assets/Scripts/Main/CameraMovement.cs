@@ -15,7 +15,13 @@ public class CameraMovement : MonoBehaviour
 
     private void Update()
     {
-        if(movCam == 1)
+        //player movement lock
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            CameraMovement.movCam *= -1;
+        }
+
+        if (movCam == 1)
         {
 
             yaw += rotVal * Input.GetAxis("Mouse X");
