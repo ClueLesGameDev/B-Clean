@@ -10,6 +10,7 @@ public class MainGame : MonoBehaviour
     public static int waterPercentage = 100;
     public bool tapOpen;
     public GameObject switchPopup;
+    public GameObject warningPopup;
 
     public static int platecount = 0;
     public static int dirtyPlates = 15;
@@ -106,6 +107,7 @@ public class MainGame : MonoBehaviour
        if (platecount >= 3)
         {
             Debug.Log("limit");
+            warningPopup.SetActive(true);
             return;
         }
         onHold.SetActive(false);
