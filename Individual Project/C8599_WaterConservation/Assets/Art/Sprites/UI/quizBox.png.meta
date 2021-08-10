@@ -120,10 +120,10 @@ TextureImporter:
       name: quizBox_0
       rect:
         serializedVersion: 2
-        x: 130
-        y: 479
-        width: 1106
-        height: 197
+        x: 309
+        y: 707
+        width: 1302
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: quizBox_1
       rect:
         serializedVersion: 2
-        x: 208
-        y: 126
-        width: 950
-        height: 258
+        x: 685
+        y: 491
+        width: 589
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

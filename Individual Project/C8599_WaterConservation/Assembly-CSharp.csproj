@@ -68,14 +68,17 @@
     <Compile Include="Assets\Scripts\MInigames\CatchThatDrop\GameManager.cs" />
     <Compile Include="Assets\Scripts\MInigames\CatchThatDrop\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\MInigames\CatchThatDrop\UIManager.cs" />
+    <Compile Include="Assets\Scripts\MInigames\Quiz\MainGame_Quiz.cs" />
     <Compile Include="Assets\Scripts\MInigames\SpotThatGerm\BugLife.cs" />
     <Compile Include="Assets\Scripts\MInigames\SpotThatGerm\GameManger.cs" />
     <Compile Include="Assets\Scripts\MInigames\SpotThatGerm\UIManager_STG.cs" />
-    <Compile Include="Assets\Scripts\Main\CameraMovement.cs" />
-    <Compile Include="Assets\Scripts\Main\Countdown.cs" />
-    <Compile Include="Assets\Scripts\Main\MainGame.cs" />
-    <Compile Include="Assets\Scripts\Main\UImanager_DD.cs" />
-    <Compile Include="Assets\Scripts\Main\loadLevel.cs" />
+    <Compile Include="Assets\Scripts\Main\DirtyDishes\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Main\DirtyDishes\Countdown.cs" />
+    <Compile Include="Assets\Scripts\Main\DirtyDishes\MainGame.cs" />
+    <Compile Include="Assets\Scripts\Main\DirtyDishes\UImanager_DD.cs" />
+    <Compile Include="Assets\Scripts\Main\DirtyDishes\loadLevel.cs" />
+    <None Include="Assets\Resources\Answers.txt" />
+    <None Include="Assets\Resources\Questions.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
