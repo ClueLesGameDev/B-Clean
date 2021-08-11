@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject drop;
+    public GameObject[] spawners = new GameObject[6];
     public static int life = 3;
     public static int limit = 5;
     public static float speed = 30;
@@ -12,14 +12,14 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Instantiate(drop, new Vector3(Random.Range(-260, 260), 230, 0), Quaternion.identity);
+        Instantiate(spawners[Random.Range(0,4)], new Vector3(Random.Range(-260, 260), 230, 0), Quaternion.identity);
         StartCoroutine(DropFall());
     }
 
     IEnumerator DropFall()
     {
         yield return new WaitForSeconds(dropTime);
-        Instantiate(drop, new Vector3(Random.Range(-330, 330), 270, 0), Quaternion.identity);
+        Instantiate(spawners[Random.Range(0, 4)], new Vector3(Random.Range(-330, 330), 270, 0), Quaternion.identity);
         StartCoroutine(DropFall());
     }
 

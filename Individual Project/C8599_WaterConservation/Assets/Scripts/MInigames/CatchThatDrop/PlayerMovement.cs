@@ -32,9 +32,15 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Collectible")
+        if (collision.tag == "Waste")
         {
             score++;
+            Destroy(collision.gameObject);
+        }
+
+        else if (collision.tag == "Water")
+        {
+            GameManager.life--;
             Destroy(collision.gameObject);
         }
     }

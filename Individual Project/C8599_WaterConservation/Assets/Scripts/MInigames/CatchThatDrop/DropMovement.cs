@@ -13,7 +13,11 @@ public class DropMovement : MonoBehaviour
 
         if(transform.position.y < -140)
         {
-            GameManager.life--;
+            if(this.gameObject.tag == "Waste")
+            {
+                GameManager.life--;
+            }
+
             Destroy(this.gameObject);
             Destroy(this);
         }
