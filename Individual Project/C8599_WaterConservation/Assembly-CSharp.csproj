@@ -77,9 +77,6 @@
     <Compile Include="Assets\Scripts\Main\DirtyDishes\MainGame.cs" />
     <Compile Include="Assets\Scripts\Main\DirtyDishes\UImanager_DD.cs" />
     <Compile Include="Assets\Scripts\Main\DirtyDishes\loadLevel.cs" />
-    <None Include="Assets\Resources\Answers.txt" />
-    <None Include="Assets\Resources\Questions.txt" />
-    <None Include="Assets\Resources\Options.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

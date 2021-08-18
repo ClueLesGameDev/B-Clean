@@ -8,6 +8,12 @@ TagManager:
   - Activator
   - Waste
   - Water
+  - Plastic
+  - Metal
+  - Paper
+  - Organic
+  - Ewaste
+  - Glass
   layers:
   - Default
   - TransparentFX
