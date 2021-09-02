@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 camCord;
     public static int score = 0;
    
+   
     public void OnMouseDown()
     {
         camCord = Camera.main.WorldToScreenPoint(gameObject.transform.position);
