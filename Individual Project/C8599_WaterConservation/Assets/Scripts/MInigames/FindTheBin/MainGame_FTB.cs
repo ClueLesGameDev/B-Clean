@@ -6,9 +6,12 @@ public class MainGame_FTB : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] Wastes = new GameObject[15];
-   
-   // int limit = 10;
+
+    public static float score = 0.0f;
+    int limit = 10;
     float spawnTime = 4.0f;
+
+    public static int life = 3;
     void Start()
     {
         StartCoroutine(SpawnWaste());
@@ -17,7 +20,7 @@ public class MainGame_FTB : MonoBehaviour
     IEnumerator SpawnWaste()
     {
         int waste = Random.Range(0, 15);
-        Instantiate(Wastes[waste], new Vector3(Random.Range(-200, 200), Random.Range(-75, -135), 0), Quaternion.identity);
+        Instantiate(Wastes[waste], new Vector3(Random.Range(-325, 325), Random.Range(-140, -220), 0), Quaternion.identity);
         yield return new WaitForSeconds(spawnTime);
         StartCoroutine(SpawnWaste());
     }
@@ -25,7 +28,7 @@ public class MainGame_FTB : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       /* if(score > limit)
+       if(score > limit)
         {
             if(spawnTime < 0.8f)
             {
@@ -41,7 +44,7 @@ public class MainGame_FTB : MonoBehaviour
         if (life == 0)
         {
             Time.timeScale = 0;
-        }*/
+        }
 
     }
 }
