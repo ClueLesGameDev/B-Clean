@@ -23,17 +23,18 @@ public class CameraMovement_CW : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             transform.Rotate(new Vector3(Input.GetAxis("Mouse Y") * speed, -Input.GetAxis("Mouse X") * speed, 0));
-            X = transform.rotation.eulerAngles.x;
+            //X = transform.rotation.eulerAngles.x;
             Y = transform.rotation.eulerAngles.y;
-            transform.rotation = Quaternion.Euler(X, Y, 0);
+            transform.rotation = Quaternion.Euler(0, Y, 0);
         }
 
-        tempPos.z += Input.GetAxis("Mouse ScrollWheel") * scrollSpeed * 10 * Time.deltaTime;
+        //tempPos.z += Input.GetAxis("Mouse ScrollWheel") * scrollSpeed * 10 * Time.deltaTime;
 
-        tempPos.z = Mathf.Clamp(tempPos.z,-580,-125);
+        tempPos.z = Mathf.Clamp(tempPos.z, -580, -125);
 
-        transform.position = tempPos;
-        
-      
+        //transform.position = tempPos;
+        transform.Translate(Vector3.forward * Input.GetAxis("Mouse ScrollWheel") * scrollSpeed * 10 * Time.deltaTime);
+
+
     }
 }

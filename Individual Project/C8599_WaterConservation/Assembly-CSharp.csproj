@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\MInigames\SpotThatGerm\GameManger.cs" />
     <Compile Include="Assets\Scripts\MInigames\SpotThatGerm\UIManager_STG.cs" />
     <Compile Include="Assets\Scripts\Main\CarWash\CameraMovement_CW.cs" />
+    <Compile Include="Assets\Scripts\Main\CarWash\MainGame_CW.cs" />
     <Compile Include="Assets\Scripts\Main\DirtyDishes\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Main\DirtyDishes\Countdown.cs" />
     <Compile Include="Assets\Scripts\Main\DirtyDishes\MainGame.cs" />
