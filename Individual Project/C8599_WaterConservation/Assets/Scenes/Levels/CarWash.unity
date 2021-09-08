@@ -221,13 +221,14 @@ GameObject:
   - component: {fileID: 61700806}
   - component: {fileID: 61700807}
   - component: {fileID: 61700808}
+  - component: {fileID: 61700809}
   m_Layer: 0
   m_Name: carDirt_13
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &61700806
 Transform:
   m_ObjectHideFlags: 0
@@ -235,13 +236,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61700805}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -147, y: -90.7, z: -80.8}
+  m_LocalRotation: {x: 0.09911831, y: 0.53790957, z: 0.06387413, w: 0.8347149}
+  m_LocalPosition: {x: -23.2, y: -31.9, z: -85.3}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5.552, y: 66.200005, z: 12.373}
 --- !u!212 &61700807
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -319,6 +320,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &61700809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61700805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &118035628
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +451,7 @@ GameObject:
   - component: {fileID: 410398899}
   - component: {fileID: 410398900}
   - component: {fileID: 410398901}
+  - component: {fileID: 410398902}
   m_Layer: 0
   m_Name: carDirt_3
   m_TagString: Collectible
@@ -452,13 +466,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410398898}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -70.1, y: -14.7, z: -175.5}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalRotation: {x: 0.19824284, y: 0.96598876, z: -0.07057087, w: 0.15028423}
+  m_LocalPosition: {x: 136.9, y: 3.5, z: 33.9}
+  m_LocalScale: {x: 4.535613, y: 4.597522, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 11.299001, y: 164.481, z: 21.650002}
 --- !u!212 &410398900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -536,6 +550,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &410398902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410398898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &429823842
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,13 +666,14 @@ GameObject:
   - component: {fileID: 448433306}
   - component: {fileID: 448433307}
   - component: {fileID: 448433308}
+  - component: {fileID: 448433309}
   m_Layer: 0
   m_Name: carDirt_8
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &448433306
 Transform:
   m_ObjectHideFlags: 0
@@ -654,13 +681,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448433305}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -168.7, y: -40.4, z: -68.7}
+  m_LocalRotation: {x: 0.3589579, y: -0, z: -0, w: 0.9333538}
+  m_LocalPosition: {x: -157.8, y: -49.5, z: -71.399994}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 42.072002, y: 0, z: 0}
 --- !u!212 &448433307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -738,6 +765,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &448433309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448433305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &558395909
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,13 +959,14 @@ GameObject:
   - component: {fileID: 603002731}
   - component: {fileID: 603002732}
   - component: {fileID: 603002733}
+  - component: {fileID: 603002734}
   m_Layer: 0
   m_Name: carDirt_12
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &603002731
 Transform:
   m_ObjectHideFlags: 0
@@ -934,13 +974,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603002730}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -196.5, y: -40.4, z: -68.7}
+  m_LocalRotation: {x: -0.3649978, y: -0, z: -0, w: 0.9310084}
+  m_LocalPosition: {x: -238.5, y: -13.7, z: 131.2}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -42.815002, y: 0, z: 0}
 --- !u!212 &603002732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1018,6 +1058,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &603002734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603002730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &616016289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,13 +1081,14 @@ GameObject:
   - component: {fileID: 616016290}
   - component: {fileID: 616016291}
   - component: {fileID: 616016292}
+  - component: {fileID: 616016293}
   m_Layer: 0
   m_Name: carDirt_5
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &616016290
 Transform:
   m_ObjectHideFlags: 0
@@ -1043,13 +1096,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616016289}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -168.7, y: -82.3, z: -78.8}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -185.6, y: -73.7, z: 15}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &616016291
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1127,6 +1180,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &616016293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616016289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &711245434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,13 +1241,14 @@ GameObject:
   - component: {fileID: 766755129}
   - component: {fileID: 766755131}
   - component: {fileID: 766755130}
+  - component: {fileID: 766755132}
   m_Layer: 0
   m_Name: carDirt_6
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &766755129
 Transform:
   m_ObjectHideFlags: 0
@@ -1190,13 +1256,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766755128}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -90.4, y: -40.4, z: -68.7}
+  m_LocalRotation: {x: -0.13023143, y: 0.83550966, z: -0.0024283514, w: -0.53381413}
+  m_LocalPosition: {x: -63.2, y: -54.7, z: -10.9}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.227, y: 244.24399, z: -12.548}
 --- !u!61 &766755130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1274,6 +1340,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &766755132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766755128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &815631188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,13 +1455,14 @@ GameObject:
   - component: {fileID: 885293317}
   - component: {fileID: 885293318}
   - component: {fileID: 885293319}
+  - component: {fileID: 885293320}
   m_Layer: 0
   m_Name: carDirt_14
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &885293317
 Transform:
   m_ObjectHideFlags: 0
@@ -1391,13 +1470,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885293316}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -114.6, y: -40.4, z: -68.7}
+  m_LocalRotation: {x: 0.6921903, y: -0.056808878, z: -0.041439, w: 0.71828145}
+  m_LocalPosition: {x: 128.3, y: 2.2, z: -91.3}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 81.756004, y: -75.75201, z: -74.503006}
 --- !u!212 &885293318
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1475,6 +1554,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &885293320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885293316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &914188061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,13 +1651,14 @@ GameObject:
   - component: {fileID: 938715627}
   - component: {fileID: 938715628}
   - component: {fileID: 938715629}
+  - component: {fileID: 938715630}
   m_Layer: 0
   m_Name: carDirt_15
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &938715627
 Transform:
   m_ObjectHideFlags: 0
@@ -1574,13 +1666,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938715626}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -168.7, y: -40.4, z: -68.7}
+  m_LocalRotation: {x: 0.037703045, y: -0.40522048, z: -0.08002317, w: 0.9099293}
+  m_LocalPosition: {x: 87.2, y: -26.700005, z: -233.5}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.215, y: -48.029003, z: -10.148001}
 --- !u!212 &938715628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1658,6 +1750,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &938715630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938715626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &939960915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,13 +1866,14 @@ GameObject:
   - component: {fileID: 962621975}
   - component: {fileID: 962621976}
   - component: {fileID: 962621977}
+  - component: {fileID: 962621978}
   m_Layer: 0
   m_Name: carDirt_1
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &962621975
 Transform:
   m_ObjectHideFlags: 0
@@ -1776,13 +1881,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962621974}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: 13.2, y: 25.4, z: -52.8}
+  m_LocalRotation: {x: 0.48085433, y: -0, z: -0, w: 0.8768005}
+  m_LocalPosition: {x: 13.2, y: 18.4, z: -48.3}
   m_LocalScale: {x: 15, y: 15, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 57.482002, y: 0, z: 0}
 --- !u!212 &962621976
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1860,6 +1965,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &962621978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962621974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &972219434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,13 +1988,14 @@ GameObject:
   - component: {fileID: 972219435}
   - component: {fileID: 972219436}
   - component: {fileID: 972219437}
+  - component: {fileID: 972219438}
   m_Layer: 0
   m_Name: carDirt_9
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &972219435
 Transform:
   m_ObjectHideFlags: 0
@@ -1885,13 +2003,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972219434}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -253.7, y: -81.2, z: -78.5}
+  m_LocalRotation: {x: 0.10418402, y: 0.46508977, z: 0.055227134, w: 0.8773752}
+  m_LocalPosition: {x: 197.8, y: -80.5, z: -81.6}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 7.5530005, y: 56.602, z: 11.275001}
 --- !u!212 &972219436
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1969,6 +2087,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &972219438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972219434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &998178349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,13 +2110,14 @@ GameObject:
   - component: {fileID: 998178350}
   - component: {fileID: 998178351}
   - component: {fileID: 998178352}
+  - component: {fileID: 998178353}
   m_Layer: 0
   m_Name: carDirt_11
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &998178350
 Transform:
   m_ObjectHideFlags: 0
@@ -1994,13 +2125,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998178349}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -168.7, y: -40.4, z: -68.7}
+  m_LocalRotation: {x: -0.0899556, y: -0.17865948, z: 0.022843909, w: 0.9795239}
+  m_LocalPosition: {x: -79, y: -42.3, z: 217}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -9.675, y: -21.052002, z: 4.474}
 --- !u!212 &998178351
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2078,6 +2209,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &998178353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998178349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1098548985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,13 +2310,14 @@ GameObject:
   - component: {fileID: 1171029397}
   - component: {fileID: 1171029398}
   - component: {fileID: 1171029399}
+  - component: {fileID: 1171029400}
   m_Layer: 0
   m_Name: carDirt_2
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1171029397
 Transform:
   m_ObjectHideFlags: 0
@@ -2181,13 +2325,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171029396}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -168.7, y: -40.4, z: -68.7}
+  m_LocalRotation: {x: 0.52583724, y: 0.35770497, z: 0.49393263, w: 0.5929359}
+  m_LocalPosition: {x: -243.6, y: -31, z: 94.3}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 164.323, y: -101.44699, z: -87.56201}
 --- !u!212 &1171029398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2265,6 +2409,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &1171029400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171029396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1198702494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2365,13 +2521,14 @@ GameObject:
   - component: {fileID: 1208949909}
   - component: {fileID: 1208949910}
   - component: {fileID: 1208949911}
+  - component: {fileID: 1208949912}
   m_Layer: 0
   m_Name: carDirt_10
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1208949909
 Transform:
   m_ObjectHideFlags: 0
@@ -2379,13 +2536,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208949908}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -168.7, y: -40.4, z: -68.7}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalRotation: {x: 0.17641228, y: -0, z: -0, w: 0.98431635}
+  m_LocalPosition: {x: -185.5, y: -0.9, z: -23.9}
+  m_LocalScale: {x: 4.3618264, y: 4.5575266, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.322, y: 0, z: 0}
 --- !u!212 &1208949910
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2463,6 +2620,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &1208949912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208949908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1285871715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2557,13 +2726,14 @@ GameObject:
   - component: {fileID: 1310037922}
   - component: {fileID: 1310037923}
   - component: {fileID: 1310037924}
+  - component: {fileID: 1310037925}
   m_Layer: 0
   m_Name: carDirt_7
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1310037922
 Transform:
   m_ObjectHideFlags: 0
@@ -2571,13 +2741,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310037921}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -90.4, y: -40.4, z: -68.7}
+  m_LocalRotation: {x: 0.14484383, y: 0.87496656, z: -0.42750868, w: 0.17518626}
+  m_LocalPosition: {x: 4.7, y: 26.8, z: 127.3}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 53.021004, y: 162.31601, z: 9.925}
 --- !u!212 &1310037923
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2655,6 +2825,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &1310037925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310037921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1361296646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3235,13 +3417,14 @@ GameObject:
   - component: {fileID: 1632894757}
   - component: {fileID: 1632894758}
   - component: {fileID: 1632894759}
+  - component: {fileID: 1632894760}
   m_Layer: 0
   m_Name: carDirt_4
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1632894757
 Transform:
   m_ObjectHideFlags: 0
@@ -3249,13 +3432,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632894756}
-  m_LocalRotation: {x: 0.11791668, y: -0, z: -0, w: 0.99302346}
-  m_LocalPosition: {x: -227.1, y: -40.4, z: -68.7}
+  m_LocalRotation: {x: 0.3193205, y: 0.49968484, z: -0.062551424, w: 0.80276823}
+  m_LocalPosition: {x: -104.3, y: -12.699997, z: 69.5}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1427389986}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 13.544001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35.113003, y: 68.734, z: 15.5060005}
 --- !u!212 &1632894758
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3333,6 +3516,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.53, y: 2.4}
   m_EdgeRadius: 0
+--- !u!114 &1632894760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632894756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0447f44d90924043956d4a16fb3c475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1711759583
 GameObject:
   m_ObjectHideFlags: 0

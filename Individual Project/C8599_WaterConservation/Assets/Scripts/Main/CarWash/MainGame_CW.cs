@@ -16,27 +16,21 @@ public class MainGame_CW : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+       /* if (Input.GetMouseButtonDown(0))
         {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+           
+            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
-            RaycastHit2D hitInfo = new RaycastHit2D();
-
-            bool isHit = Physics2D.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
-            if (isHit)
+            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+            if (hit.collider != null)
             {
-                {
-                    //if (hitInfo.transform.gameObject.tag == "Collectible")
-                    //{
-                       // CollectPlates(hitInfo.transform.gameObject);
-                        Debug.Log("Hit " + hitInfo.transform.gameObject.name);
-                    //}
-                }
-
+                Debug.Log(hit.collider.gameObject.name);
+                Debug.Log("Vasanthi");
+                // hit.collider.attachedRigidbody.AddForce(Vector2.up);
             }
 
-
-
-        }
+        }*/
 
     }
 }
