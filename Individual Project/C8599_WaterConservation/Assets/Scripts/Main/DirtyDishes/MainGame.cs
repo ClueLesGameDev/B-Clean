@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class MainGame : MonoBehaviour
@@ -62,9 +63,9 @@ public class MainGame : MonoBehaviour
             {
                 Debug.Log("bonus unlocked");
             }
-       
-            Debug.Log("you won");
-           
+
+            SceneManager.LoadScene("CarWash", LoadSceneMode.Single);
+
         }
     }
 

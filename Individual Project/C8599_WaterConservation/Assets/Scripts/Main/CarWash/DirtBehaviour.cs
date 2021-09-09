@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class DirtBehaviour : MonoBehaviour
 {
+    [SerializeField]
+    private AudioSource killAudio;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -18,6 +20,16 @@ public class DirtBehaviour : MonoBehaviour
 
     void OnMouseDown()
     {
+        MainGame_CW.dirtCount--;
+        GetComponent<Animator>().enabled = true;
+        killAudio.Play();
+        StartCoroutine(Die());
+    }
+
+    IEnumerator Die()
+    {
+        yield return new WaitForSeconds(2.0f);
         gameObject.SetActive(false);
     }
+
 }

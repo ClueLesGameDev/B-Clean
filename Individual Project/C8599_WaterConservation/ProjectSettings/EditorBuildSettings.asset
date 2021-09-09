@@ -12,9 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/DirtyDishes.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/Levels/CarWash.unity
+    guid: 6a4e1620a0b262c4ba51203c43ae5841
+  - enabled: 1
     path: Assets/Scenes/MIniGames/CatchThatDrop.unity
     guid: 2e8c4db318c6e0b4fbc391778700d021
   - enabled: 1
     path: Assets/Scenes/MIniGames/SpotThatGerm.unity
     guid: c41314abc2727e146ba83891fd1fd106
+  - enabled: 1
+    path: Assets/Scenes/MIniGames/FindTheBin.unity
+    guid: 207230833b2368b4cbe2483f59ae4730
   m_configObjects: {}

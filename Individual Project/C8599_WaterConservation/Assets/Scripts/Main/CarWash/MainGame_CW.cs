@@ -5,32 +5,35 @@ using UnityEngine;
 public class MainGame_CW : MonoBehaviour
 {
     [SerializeField]
-    public GameObject[] Dirt = new GameObject[15]; 
+    public GameObject[] Dirt = new GameObject[15];
+
+    public static int dirtCount = 15;
+    int waterPercentage;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        waterPercentage = MainGame.waterPercentage;
     }
 
     // Update is called once per frame
     void Update()
     {
-       /* if (Input.GetMouseButtonDown(0))
+        if (waterPercentage == 0)
         {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-           
-            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+            Debug.Log("Game Over");
+        }
 
-            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            if (hit.collider != null)
+        if (dirtCount == 0 && waterPercentage > 0)
+        {
+            if (Countdown.minute < 1.0)
             {
-                Debug.Log(hit.collider.gameObject.name);
-                Debug.Log("Vasanthi");
-                // hit.collider.attachedRigidbody.AddForce(Vector2.up);
+                Debug.Log("bonus unlocked");
             }
 
-        }*/
+            Debug.Log("you won");
+
+        }
 
     }
 }
