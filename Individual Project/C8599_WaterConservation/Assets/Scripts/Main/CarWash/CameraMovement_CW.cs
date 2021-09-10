@@ -43,5 +43,10 @@ public class CameraMovement_CW : MonoBehaviour
         {
             transform.position = new Vector3(470, transform.position.y, transform.position.z);
         }
+
+        if (transform.position.z > 780)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 780);
+        }
     }
 }

@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainGame_CW : MonoBehaviour
 {
     [SerializeField]
     public GameObject[] Dirt = new GameObject[15];
+    public GameObject winPopup;
 
     public static int dirtCount = 15;
     public static int waterPercentage_CW;
-    bool tapOpen = false;
+    public static bool tapOpen = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +37,14 @@ public class MainGame_CW : MonoBehaviour
 
             Debug.Log("you won");
 
+            winPopup.SetActive(true);
         }
 
+    }
+
+    public void LoadNext()
+    {
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
     public void TapOpen()
@@ -55,6 +63,10 @@ public class MainGame_CW : MonoBehaviour
     {
         yield return new WaitForSeconds(2.0f);
         waterPercentage_CW--;
-        StartCoroutine(CountdownTimer());
+        if(tapOpen ==  true)
+        {
+            StartCoroutine(CountdownTimer());
+        }
+        
     }
 }

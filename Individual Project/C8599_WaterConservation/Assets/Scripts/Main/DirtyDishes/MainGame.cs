@@ -12,6 +12,7 @@ public class MainGame : MonoBehaviour
     public bool tapOpen;
     public GameObject switchPopup;
     public GameObject warningPopup;
+    public GameObject winpop;
 
     public static int platecount = 0;
     public static int dirtyPlates = 15;
@@ -59,22 +60,27 @@ public class MainGame : MonoBehaviour
 
         if (dirtyPlates == 0 && waterPercentage > 0)
         {
-            if(waterPercentage > 80)
+            if(waterPercentage > 75)
             {
                 MenuManager.CTW_isUnlocked = true;
             }
 
-            if(Countdown.minute < 1.0)
+            if(Countdown.minute < 2.0)
             {
                 Debug.Log("bonus unlocked");
                 MenuManager.FTB_isUnlocked = true;
             }
 
-            SceneManager.LoadScene("CarWash", LoadSceneMode.Single);
+            winpop.SetActive(true);
 
         }
 
 
+    }
+
+    public void LoadNext()
+    {
+        SceneManager.LoadScene("CarWash", LoadSceneMode.Single);
     }
 
     public void TapOpen()

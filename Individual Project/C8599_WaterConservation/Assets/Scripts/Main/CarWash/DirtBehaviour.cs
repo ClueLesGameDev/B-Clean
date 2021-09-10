@@ -20,10 +20,14 @@ public class DirtBehaviour : MonoBehaviour
 
     void OnMouseDown()
     {
-        MainGame_CW.dirtCount--;
-        GetComponent<Animator>().enabled = true;
-        killAudio.Play();
-        StartCoroutine(Die());
+        if(MainGame_CW.tapOpen == true)
+        {
+            MainGame_CW.dirtCount--;
+            GetComponent<Animator>().enabled = true;
+            killAudio.Play();
+            StartCoroutine(Die());
+        }
+        
     }
 
     IEnumerator Die()

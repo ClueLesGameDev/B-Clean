@@ -25,31 +25,40 @@ public class MenuManager : MonoBehaviour
 
     public void Unlocked_CTW()
     {
-        if (CTW_isUnlocked == false)
+        if (CTW_isUnlocked == true)
         {
-            popup.GetComponent<Text>().text = "Finish the first level with 80% water remaining to unlock";
+            SceneManager.LoadScene("CatchThatDrop", LoadSceneMode.Single);
+        }
+        else 
+        {
+            popup.GetComponent<Text>().text = "Finish the first level with 75% water remaining to unlock";
             popup.SetActive(true);
         }
-        else { SceneManager.LoadScene("DirtyDishes", LoadSceneMode.Single); }
     }
 
     public void Unlocked_STG()
     {
-        if (STG_isUnlocked == false)
+        if (STG_isUnlocked == true)
+        {
+            SceneManager.LoadScene("SpotThatGerm", LoadSceneMode.Single);
+        }
+        else 
         {
             popup.GetComponent<Text>().text = "Finish the second level with 50% water remaining to unlock";
             popup.SetActive(true);
         }
-        else { SceneManager.LoadScene("CatchThatDrop", LoadSceneMode.Single); }
     }
 
     public void Unlocked_FTB()
     {
-        if (FTB_isUnlocked == false)
+        if (FTB_isUnlocked == true)
         {
-            popup.GetComponent<Text>().text = "Finish the first level in 45 seconds to unlock";
+            SceneManager.LoadScene("FindTheBin", LoadSceneMode.Single);
+        }
+        else 
+        {
+            popup.GetComponent<Text>().text = "Finish the first level in 120 seconds to unlock";
             popup.SetActive(true);
         }
-        else { SceneManager.LoadScene("SpotThatGerm", LoadSceneMode.Single); }
     }
 }
