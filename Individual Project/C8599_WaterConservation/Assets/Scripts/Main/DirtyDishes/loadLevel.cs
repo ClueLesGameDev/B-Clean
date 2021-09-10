@@ -20,12 +20,13 @@ public class loadLevel : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
+
     public void loadDirtyDishes()
     {
         SceneManager.LoadScene("DirtyDishes", LoadSceneMode.Single);
     }
 
-    public void loadCatchThatDrop()
+   /* public void loadCatchThatDrop()
     {
         SceneManager.LoadScene("CatchThatDrop", LoadSceneMode.Single);
     }
@@ -33,5 +34,5 @@ public class loadLevel : MonoBehaviour
     public void loadSpotThatGerm()
     {
         SceneManager.LoadScene("SpotThatGerm", LoadSceneMode.Single);
-    }
+    }*/
 }

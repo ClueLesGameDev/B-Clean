@@ -17,7 +17,7 @@ public class UImanager_CW : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        waterField.GetComponent<Text>().text = MainGame.waterPercentage + "%";
+        waterField.GetComponent<Text>().text = MainGame_CW.waterPercentage_CW + "%";
 
         if (Countdown.second < 10)
             secondField.GetComponent<Text>().text = "0" + Countdown.second + "";

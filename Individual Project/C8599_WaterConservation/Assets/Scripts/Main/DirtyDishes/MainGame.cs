@@ -59,14 +59,22 @@ public class MainGame : MonoBehaviour
 
         if (dirtyPlates == 0 && waterPercentage > 0)
         {
+            if(waterPercentage > 80)
+            {
+                MenuManager.CTW_isUnlocked = true;
+            }
+
             if(Countdown.minute < 1.0)
             {
                 Debug.Log("bonus unlocked");
+                MenuManager.FTB_isUnlocked = true;
             }
 
             SceneManager.LoadScene("CarWash", LoadSceneMode.Single);
 
         }
+
+
     }
 
     public void TapOpen()
@@ -93,7 +101,7 @@ public class MainGame : MonoBehaviour
 
     IEnumerator CountdownTimer()
     {
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(2.0f);
         waterPercentage--;
 
         if (tapOpen == true)

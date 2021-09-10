@@ -35,6 +35,13 @@ public class CameraMovement_CW : MonoBehaviour
         //transform.position = tempPos;
         transform.Translate(Vector3.forward * Input.GetAxis("Mouse ScrollWheel") * scrollSpeed * 10 * Time.deltaTime);
 
-
+        if (transform.position.x < -470)
+        {
+            transform.position = new Vector3(-470, transform.position.y, transform.position.z);
+        }
+        if (transform.position.x > 470)
+        {
+            transform.position = new Vector3(470, transform.position.y, transform.position.z);
+        }
     }
 }
