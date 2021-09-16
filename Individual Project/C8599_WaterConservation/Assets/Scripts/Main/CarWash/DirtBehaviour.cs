@@ -6,6 +6,8 @@ public class DirtBehaviour : MonoBehaviour
 {
     [SerializeField]
     private AudioSource killAudio;
+
+    public AudioSource warningAud;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,11 @@ public class DirtBehaviour : MonoBehaviour
             GetComponent<Animator>().enabled = true;
             killAudio.Play();
             StartCoroutine(Die());
+        }
+
+        else
+        {
+            warningAud.Play();
         }
         
     }

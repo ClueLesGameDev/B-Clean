@@ -17,6 +17,9 @@ public class MainGame : MonoBehaviour
     public static int platecount = 0;
     public static int dirtyPlates = 15;
     public static int cleanPlates = 0;
+
+    public AudioSource warningAud;
+    public AudioSource selectionAud;
     private void Update()
     {
         if(platecount < 0)
@@ -36,6 +39,7 @@ public class MainGame : MonoBehaviour
                     if (hitInfo.transform.gameObject.tag == "Collectible")
                     {
                         CollectPlates(hitInfo.transform.gameObject);
+                        selectionAud.Play();
                         Debug.Log("Hit " + hitInfo.transform.gameObject.name);
                     }
                 }
@@ -123,6 +127,7 @@ public class MainGame : MonoBehaviour
         {
             Debug.Log("limit");
             warningPopup.SetActive(true);
+            warningAud.Play();
             return;
         }
         onHold.SetActive(false);
